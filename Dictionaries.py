@@ -155,3 +155,25 @@ for number in numbers:
 # now we can use dictionaries comprehension
 square_dict = { item : item * item for item in result}
 print(square_dict)
+
+# Given a list of tuples, create a dictionary where the first element of each tuple is the key and the second element
+# is the value.
+
+# Given a list of tuples, create a dictionary where the first element of each tuple is the key and the second element
+# is the value.
+
+pairs = [('a', 1), ('b', 2), ('c', 3)]
+
+new_dict = { x[0] : x[1] for x in pairs}
+print(new_dict)
+
+# comprehension syntax for dictionaries
+# {key_expression: value_expression for item in iterable if condition}
+
+# sorting dictionaries in python
+# sort by keys
+# sorted()
+
+my_dict = {'banana': 3, 'apple': 5, 'orange': 2}
+sorted_dict = { k : my_dict[k] for k in sorted(my_dict)}
+print(sorted_dict)

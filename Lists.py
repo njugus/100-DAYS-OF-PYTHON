@@ -42,7 +42,7 @@ item = my_fruits.index("apple", 0, 5)
 print(item)
 
 # lists
-my_fruits = ["apple", "bananas", "apple",  "guavas", "oranges", "lemon"]
+my_fruits = ["apple", "bananas", "apple", "guavas", "oranges", "lemon"]
 # count
 # returns the number of occurrences of the specified item
 print(my_fruits.count("lemon"))
@@ -54,5 +54,15 @@ print(my_numbers)
 
 # list comprehensions
 # used to construct lists in a more friendly manner
-my_squares = [ x * x for x in range(1, 6)]
+my_squares = [x * x for x in range(1, 6)]
 print(my_squares)
+
+# lets flatten a 2d list
+matrix = [
+    [2, 3, 4], [5, 6, 7], [8, 9, 10]
+]
+flattened_list = [y for x in matrix for y in x]
+print(flattened_list)
+
+# comprehension syntax for lists
+# [ expression for item in iterable if condition ]
